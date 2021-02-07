@@ -12,7 +12,7 @@ humberger.addEventListener('click' , function() {
 async  function reackCorona (countryCode , className) {
    try {
 
-      const jsonData = await fetch(`https://cors-anywhere.herokuapp.com/https://trackcorona.live/api/countries/sd`);
+      const jsonData = await fetch(`https://trackcorona.live/api/countries/sd`);
       const data = await jsonData.json();
 
       const stats = data.data[0];
