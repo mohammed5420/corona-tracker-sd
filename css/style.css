@@ -1,0 +1,245 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+:root {
+  font-size: 62.5%; }
+
+body {
+  background-color: #dae1ea;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+.contener {
+  max-width: 138rem;
+  margin: 0 auto; }
+
+header {
+  margin-bottom: 2rem;
+  padding: 2rem; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0.8rem 2.4rem rgba(0, 0, 0, 0.2);
+  background-color: #fafdfc;
+  border-radius: .4rem;
+  position: relative; }
+
+.logo .logo-text {
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #2b2727;
+  font-family: 'Dancing Script', cursive; }
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%; }
+  .nav-list li:not(:last-child) {
+    margin-right: 3rem; }
+
+.nav-link {
+  display: flex;
+  color: #121212;
+  font-size: 1.5rem;
+  font-weight: 300;
+  align-items: center;
+  text-transform: capitalize;
+  text-decoration: none; }
+  .nav-link img {
+    width: 2rem; }
+  .nav-link svg {
+    width: 2rem; }
+  .nav-link span {
+    margin-left: 2rem; }
+
+nav .open {
+  z-index: 99;
+  display: flex;
+  position: absolute;
+  top: 140%;
+  height: 10rem;
+  width: 100%;
+  left: 0;
+  border-radius: .4rem;
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0 2rem;
+  background-color: #fafdfc; }
+
+.humberger {
+  display: none;
+  width: 1.6rem;
+  cursor: pointer; }
+  .humberger > span {
+    display: block;
+    border-radius: 2rem;
+    background-color: #909090;
+    height: .2rem; }
+    .humberger > span:not(:last-child) {
+      margin-bottom: .3rem; }
+
+.hero-section {
+  margin-bottom: 4rem;
+  padding: 0 2rem; }
+  .hero-section .hero-img {
+    max-width: 100%;
+    border-radius: .4rem;
+    display: block;
+    margin: 0 auto 3rem; }
+  .hero-section .hero-title {
+    text-align: center;
+    color: #ed5b43;
+    font-size: 2.2rem;
+    text-transform: uppercase; }
+
+.statistics .covid-title {
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: #26a6df;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.statistics .u-drop-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 3rem 2rem;
+  position: relative;
+  left: 0;
+  width: 100%; }
+  .statistics .u-drop-scroll::-webkit-scrollbar {
+    display: none; }
+  .statistics .u-drop-scroll > div {
+    margin-right: 3rem; }
+
+.statistics .country {
+  margin-bottom: 3rem;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .statistics .country .case-card {
+    width: 16rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex: 0 0 auto;
+    border-radius: .6rem; }
+    .statistics .country .case-card .title {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      height: 20%;
+      margin-bottom: 2rem; }
+      .statistics .country .case-card .title--rec {
+        color: #4a494a; }
+      .statistics .country .case-card .title--con {
+        color: #db1e34; }
+      .statistics .country .case-card .title--death {
+        color: #383838; }
+    .statistics .country .case-card--rec {
+      background-color: #acd7a0d8;
+      box-shadow: 0 0.8rem 2.8rem rgba(7, 199, 55, 0.3); }
+    .statistics .country .case-card--con {
+      background-color: #eaa7b89c;
+      box-shadow: 0 0.8rem 2.8rem rgba(255, 2, 149, 0.3); }
+    .statistics .country .case-card--death {
+      background-color: #dcdcdc;
+      box-shadow: 0 0.8rem 2.8rem rgba(0, 0, 0, 0.3); }
+    .statistics .country .case-card .numbers {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70%;
+      width: 100%;
+      padding: 2rem 1rem;
+      border-radius: 1.4rem; }
+      .statistics .country .case-card .numbers svg {
+        width: 2.5rem; }
+      .statistics .country .case-card .numbers .total {
+        font-size: 2.2rem;
+        text-transform: uppercase; }
+        .statistics .country .case-card .numbers .total--rec {
+          color: #4a494a; }
+        .statistics .country .case-card .numbers .total--con {
+          color: #db1e34; }
+        .statistics .country .case-card .numbers .total--death {
+          color: #383838; }
+      .statistics .country .case-card .numbers--rec {
+        background-color: #65c295d7; }
+      .statistics .country .case-card .numbers--con {
+        background-color: #f47a82a8; }
+      .statistics .country .case-card .numbers--death {
+        background-color: #9c9c9c; }
+      .statistics .country .case-card .numbers .numbers__persentages {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        line-height: 4rem; }
+        .statistics .country .case-card .numbers .numbers__persentages--rec {
+          background-color: #039b5ee0; }
+        .statistics .country .case-card .numbers .numbers__persentages--con {
+          background-color: #de6b80ef; }
+        .statistics .country .case-card .numbers .numbers__persentages--death {
+          background-color: #909090; }
+
+@media screen and (max-width: 687px) {
+  .nav-list {
+    display: none; }
+  header .humberger {
+    display: block; } }
+
+@media screen and (min-width: 640px) {
+  body main .statistics .u-drop-scroll {
+    overflow: hidden;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  body main .hero-section .hero-img {
+    max-width: 45rem; } }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 6rem 1rem;
+  background-color: #121212;
+  color: #acacac;
+  margin-top: 4rem; }
+  footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem; }
+    footer .links a {
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #acacac; }
+      footer .links a:first-child {
+        margin-right: 2rem; }
+  footer p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase; }
